@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Candy Pratama — Fullstack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>CP<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#home" class="mob-link">Home</a></li>
+      <li><a href="#about" class="mob-link">About</a></li>
+      <li><a href="#projects" class="mob-link">Projects</a></li>
+      <li><a href="#services" class="mob-link">Services</a></li>
+      <li><a href="#contact" class="mob-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HOME -->
+  <section id="home" class="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-content">
+      <div class="hero-label">
+        <span class="dot"></span> Available for work
+      </div>
+      <h1 class="hero-name">Candy<br><span class="name-outline">Pratama</span></h1>
+      <div class="hero-terminal">
+        <div class="terminal-bar">
+          <span class="t-dot r"></span>
+          <span class="t-dot y"></span>
+          <span class="t-dot g"></span>
+          <span class="t-file">~/candy $ whoami</span>
+        </div>
+        <div class="terminal-body">
+          <span class="t-prompt">→</span>
+          <span class="t-typed" id="typedText"></span>
+          <span class="t-cursor">█</span>
+        </div>
+      </div>
+      <p class="hero-sub">
+        I build full-stack web applications that solve real problems — from database schema to the last pixel of UI.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">See My Work</a>
+        <a href="#contact" class="btn-ghost">Let's Talk</a>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-num">12+</span>
+        <span class="stat-label">Projects Shipped</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">3+</span>
+        <span class="stat-label">Years Building</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">100%</span>
+        <span class="stat-label">On-time Delivery</span>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-left">
+          <div class="section-eyebrow">About Me</div>
+          <h2 class="section-title">I turn ideas into<br><em>working software</em></h2>
+          <p class="about-bio">
+            Halo! I'm Candy — a fullstack developer from Indonesia with a deep interest in building web products that are fast, clean, and actually useful. I started coding during my IT studies, and somewhere between debugging my first PHP app and deploying my first Laravel API, I got hooked.
+          </p>
+          <p class="about-bio">
+            I enjoy the full journey: understanding what a product needs to do, designing how data flows through it, building the interface people touch, and shipping it to production. No handoffs, no silos — just end-to-end ownership.
+          </p>
+          <div class="about-stack">
+            <div class="stack-group">
+              <span class="stack-label">Frontend</span>
+              <div class="stack-tags">
+                <span class="tag">React</span>
+                <span class="tag">Vue</span>
+                <span class="tag">Tailwind</span>
+                <span class="tag">Alpine.js</span>
+              </div>
+            </div>
+            <div class="stack-group">
+              <span class="stack-label">Backend</span>
+              <div class="stack-tags">
+                <span class="tag">Laravel</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">PHP</span>
+                <span class="tag">REST API</span>
+              </div>
+            </div>
+            <div class="stack-group">
+              <span class="stack-label">Database & DevOps</span>
+              <div class="stack-tags">
+                <span class="tag">MySQL</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">Redis</span>
+                <span class="tag">Docker</span>
+                <span class="tag">VPS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-right">
+          <div class="about-card-wrap">
+            <div class="about-img-card">
+              <div class="about-avatar">
+                <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="100" cy="80" r="40" fill="#4F6EF7" opacity="0.3"/>
+                  <circle cx="100" cy="80" r="28" fill="#4F6EF7" opacity="0.6"/>
+                  <ellipse cx="100" cy="170" rx="60" ry="40" fill="#4F6EF7" opacity="0.3"/>
+                  <ellipse cx="100" cy="162" rx="45" ry="30" fill="#4F6EF7" opacity="0.5"/>
+                </svg>
+                <div class="avatar-initials">CP</div>
+              </div>
+              <div class="about-card-info">
+                <span class="card-name">Candy Pratama</span>
+                <span class="card-role">Fullstack Developer</span>
+                <span class="card-loc">📍 Indonesia</span>
+              </div>
+            </div>
+            <div class="about-quote">
+              <span class="quote-mark">"</span>
+              Clean code is not written for the machine. It's written for the next developer — which is often future me.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-eyebrow">Projects</div>
+        <h2 class="section-title">Things I've built<br><em>& why</em></h2>
+        <p class="section-sub">Every project started with a real problem. Here's the story behind each one.</p>
+      </div>
+
+      <!-- PROJECT 1 -->
+      <article class="project-card featured">
+        <div class="project-story">
+          <div class="project-meta">
+            <span class="project-num">01</span>
+            <span class="project-type">Point of Sale</span>
+            <span class="project-year">2024</span>
+          </div>
+          <h3 class="project-title">WarkopPOS</h3>
+          <div class="project-narrative">
+            <p class="story-hook">A small coffee shop in Malang was doing all their orders on paper. End of day, the owner would manually tally receipts — sometimes getting home past midnight just to know if they made a profit.</p>
+            <p class="story-build">I built WarkopPOS: a lightweight POS system tailored for Indonesian warung & café scale. Cashier interface on the front, a live dashboard for the owner on the back. Receipt printing, daily summary, stock alerts — the stuff that actually matters for a 3-table coffee shop, not enterprise bloat.</p>
+            <p class="story-result"><strong>Result:</strong> Owner now closes books in under 5 minutes. Revenue transparency led them to drop 2 slow-moving menu items and increase net margin by ~18%.</p>
+          </div>
+          <div class="project-tech">
+            <span class="tech-tag">Laravel</span>
+            <span class="tech-tag">MySQL</span>
+            <span class="tech-tag">Alpine.js</span>
+            <span class="tech-tag">Tailwind</span>
+            <span class="tech-tag">Thermal Print</span>
+          </div>
+          <div class="project-links">
+            <a href="https://demo.candypratama.dev/warkop-pos" target="_blank" class="btn-demo">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Live Demo
+            </a>
+            <a href="https://github.com/candypratama/warkop-pos" target="_blank" class="btn-ghost-sm">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+        <div class="project-visual">
+          <div class="mockup-window">
+            <div class="mockup-bar">
+              <span class="m-dot"></span><span class="m-dot"></span><span class="m-dot"></span>
+              <span class="mockup-url">warkop-pos.app/cashier</span>
+            </div>
+            <div class="mockup-screen pos-screen">
+              <div class="pos-header">
+                <span class="pos-logo">☕ WarkopPOS</span>
+                <span class="pos-time" id="posTime">08:42</span>
+              </div>
+              <div class="pos-grid">
+                <div class="pos-item">Americano <span>Rp 15k</span></div>
+                <div class="pos-item">Kopi Susu <span>Rp 18k</span></div>
+                <div class="pos-item">Es Teh <span>Rp 8k</span></div>
+                <div class="pos-item active">Nasi Goreng <span>Rp 25k</span></div>
+                <div class="pos-item">Mie Goreng <span>Rp 22k</span></div>
+                <div class="pos-item">Roti Bakar <span>Rp 12k</span></div>
+              </div>
+              <div class="pos-total">
+                <span>Total</span>
+                <span class="pos-total-num">Rp 43.000</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJECT 2 -->
+      <article class="project-card">
+        <div class="project-story">
+          <div class="project-meta">
+            <span class="project-num">02</span>
+            <span class="project-type">CMS / Blog Platform</span>
+            <span class="project-year">2024</span>
+          </div>
+          <h3 class="project-title">Ceritaku CMS</h3>
+          <div class="project-narrative">
+            <p class="story-hook">A local journalist asked me: "Kenapa harus bayar WordPress buat nulis artikel?" She had content. She didn't have a budget for subscriptions or a developer on-call.</p>
+            <p class="story-build">I built Ceritaku — a minimalist CMS focused on writing. Markdown editor, category & tag system, SEO fields, and an image uploader. No plugin ecosystem, no widget hell. Just a place to write and publish fast.</p>
+            <p class="story-result"><strong>Result:</strong> She now runs 3 separate content sites on the same install. Zero monthly cost, full data ownership.</p>
+          </div>
+          <div class="project-tech">
+            <span class="tech-tag">Laravel</span>
+            <span class="tech-tag">Vue 3</span>
+            <span class="tech-tag">PostgreSQL</span>
+            <span class="tech-tag">Markdown</span>
+            <span class="tech-tag">S3 Storage</span>
+          </div>
+          <div class="project-links">
+            <a href="https://demo.candypratama.dev/ceritaku" target="_blank" class="btn-demo">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Live Demo
+            </a>
+            <a href="https://github.com/candypratama/ceritaku-cms" target="_blank" class="btn-ghost-sm">GitHub</a>
+          </div>
+        </div>
+        <div class="project-visual">
+          <div class="mockup-window compact">
+            <div class="mockup-bar">
+              <span class="m-dot"></span><span class="m-dot"></span><span class="m-dot"></span>
+              <span class="mockup-url">ceritaku.app/editor</span>
+            </div>
+            <div class="mockup-screen cms-screen">
+              <div class="cms-sidebar">
+                <div class="cms-nav-item active">✏️ Editor</div>
+                <div class="cms-nav-item">📄 Posts</div>
+                <div class="cms-nav-item">🏷️ Tags</div>
+                <div class="cms-nav-item">📁 Media</div>
+              </div>
+              <div class="cms-main">
+                <div class="cms-title-input">Senja di Malioboro</div>
+                <div class="cms-editor-body">
+                  <div class="cms-line w-full"></div>
+                  <div class="cms-line w-3q"></div>
+                  <div class="cms-line w-full"></div>
+                  <div class="cms-line w-half"></div>
+                </div>
+                <div class="cms-publish-btn">Publish →</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJECT 3 -->
+      <article class="project-card">
+        <div class="project-story">
+          <div class="project-meta">
+            <span class="project-num">03</span>
+            <span class="project-type">Secondhand Marketplace + Auction</span>
+            <span class="project-year">2025</span>
+          </div>
+          <h3 class="project-title">Barkos</h3>
+          <div class="project-narrative">
+            <p class="story-hook">Students in Indonesian boarding houses ("kos") accumulate stuff — furniture, appliances, books — and then move out. Most just leave it behind because selling is a hassle. There had to be a better way within the kos community itself.</p>
+            <p class="story-build">Barkos is a secondhand goods marketplace built specifically for boarding house communities. Sellers list items, buyers browse by kos location, and high-demand items go to real-time auction. WebSocket-powered bidding, escrow-style payment flow, and an admin panel for kos managers.</p>
+            <p class="story-result"><strong>Result:</strong> Piloting in 4 kos in Malang. 80+ items listed in first month, Rp 3.2jt in transactions facilitated.</p>
+          </div>
+          <div class="project-tech">
+            <span class="tech-tag">Laravel</span>
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">WebSocket</span>
+            <span class="tech-tag">MySQL</span>
+            <span class="tech-tag">Redis</span>
+            <span class="tech-tag">Midtrans</span>
+          </div>
+          <div class="project-links">
+            <a href="https://barkos.id" target="_blank" class="btn-demo">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Live Demo
+            </a>
+            <a href="https://github.com/candypratama/barkos" target="_blank" class="btn-ghost-sm">GitHub</a>
+          </div>
+        </div>
+        <div class="project-visual">
+          <div class="mockup-window compact">
+            <div class="mockup-bar">
+              <span class="m-dot"></span><span class="m-dot"></span><span class="m-dot"></span>
+              <span class="mockup-url">barkos.id/auction/42</span>
+            </div>
+            <div class="mockup-screen auction-screen">
+              <div class="auction-item-img">🛋️</div>
+              <div class="auction-title">Kasur Busa Queen 160cm</div>
+              <div class="auction-bid-area">
+                <div class="auction-current">
+                  <span class="bid-label">Current Bid</span>
+                  <span class="bid-amount" id="bidAmount">Rp 185.000</span>
+                </div>
+                <div class="auction-timer">
+                  <span class="timer-label">Ends in</span>
+                  <span class="timer-val" id="auctionTimer">02:14</span>
+                </div>
+              </div>
+              <button class="bid-btn">Place Bid →</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJECT 4 -->
+      <article class="project-card">
+        <div class="project-story">
+          <div class="project-meta">
+            <span class="project-num">04</span>
+            <span class="project-type">Landing Page</span>
+            <span class="project-year">2024</span>
+          </div>
+          <h3 class="project-title">Panen Digital</h3>
+          <div class="project-narrative">
+            <p class="story-hook">An agri-tech startup needed to validate their concept before building the full product. They had a pitch deck and 3 weeks before a demo day with investors.</p>
+            <p class="story-build">I built a high-converting landing page with a waitlist form, problem/solution narrative, and animated product preview. Integrated with Mailchimp for the waitlist, Hotjar for heatmaps, and Google Analytics for conversion tracking. Lighthouse score: 97.</p>
+            <p class="story-result"><strong>Result:</strong> 340 waitlist signups in 3 weeks. Investors funded the next round. The page paid for itself before demo day.</p>
+          </div>
+          <div class="project-tech">
+            <span class="tech-tag">HTML/CSS/JS</span>
+            <span class="tech-tag">GSAP</span>
+            <span class="tech-tag">Mailchimp API</span>
+            <span class="tech-tag">Netlify</span>
+          </div>
+          <div class="project-links">
+            <a href="https://demo.candypratama.dev/panen-digital" target="_blank" class="btn-demo">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Live Demo
+            </a>
+            <a href="https://github.com/candypratama/panen-digital" target="_blank" class="btn-ghost-sm">GitHub</a>
+          </div>
+        </div>
+        <div class="project-visual">
+          <div class="mockup-window compact">
+            <div class="mockup-bar">
+              <span class="m-dot"></span><span class="m-dot"></span><span class="m-dot"></span>
+              <span class="mockup-url">panen-digital.id</span>
+            </div>
+            <div class="mockup-screen landing-screen">
+              <div class="lp-hero-text">🌾 Panen Digital</div>
+              <div class="lp-sub">Platform agri-tech untuk petani modern</div>
+              <div class="lp-input-row">
+                <div class="lp-input-fake">Email kamu...</div>
+                <div class="lp-cta-btn">Daftar Waitlist</div>
+              </div>
+              <div class="lp-badges">
+                <span class="lp-badge">✓ Gratis</span>
+                <span class="lp-badge">✓ No spam</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="services">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-eyebrow">What I Build</div>
+        <h2 class="section-title">Web apps for<br><em>every use case</em></h2>
+        <p class="section-sub">Whether you need a quick launch or a full product, I've got the stack for it.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">🧾</div>
+          <h3>Point of Sale (POS)</h3>
+          <p>Custom POS systems for warung, café, toko, and retail — with cashier interface, stock management, and owner dashboard.</p>
+          <ul class="service-features">
+            <li>Thermal receipt printing</li>
+            <li>Realtime stock tracking</li>
+            <li>Daily & monthly reports</li>
+            <li>Multi-user / cashier roles</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">📝</div>
+          <h3>CMS & Blog Platform</h3>
+          <p>Content management systems built around your workflow — clean editor, media library, and full SEO control.</p>
+          <ul class="service-features">
+            <li>Markdown / rich text editor</li>
+            <li>Category, tag & SEO fields</li>
+            <li>Multi-author support</li>
+            <li>Custom domain & hosting</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🚀</div>
+          <h3>Landing Page</h3>
+          <p>Fast, focused pages built to convert — product launches, startup MVPs, pre-order pages, and event registrations.</p>
+          <ul class="service-features">
+            <li>90+ Lighthouse score</li>
+            <li>Waitlist & form integrations</li>
+            <li>Analytics & A/B ready</li>
+            <li>Deploy in days, not weeks</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🛒</div>
+          <h3>E-commerce & Marketplace</h3>
+          <p>Online stores and multi-vendor marketplaces with product catalog, cart, checkout, and payment gateway integration.</p>
+          <ul class="service-features">
+            <li>Midtrans / Xendit integration</li>
+            <li>Order & shipping management</li>
+            <li>Seller dashboard</li>
+            <li>Auction / bidding support</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">📊</div>
+          <h3>Company Profile & Dashboard</h3>
+          <p>Professional company websites paired with internal dashboards for data tracking, reporting, and team management.</p>
+          <ul class="service-features">
+            <li>Responsive company profile</li>
+            <li>Admin & analytics panel</li>
+            <li>Role-based access control</li>
+            <li>API & third-party integration</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🔌</div>
+          <h3>REST API & Backend</h3>
+          <p>Scalable backend services and REST APIs for mobile apps, third-party integrations, or decoupled frontend teams.</p>
+          <ul class="service-features">
+            <li>Laravel / Node.js</li>
+            <li>JWT & OAuth authentication</li>
+            <li>API documentation</li>
+            <li>VPS deployment & Docker</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-left">
+          <div class="section-eyebrow">Contact</div>
+          <h2 class="section-title">Got a project<br><em>in mind?</em></h2>
+          <p class="contact-desc">Tell me what you're building. I usually reply within 24 hours.</p>
+          <div class="contact-links">
+            <a href="mailto:candy@candypratama.dev" class="contact-item">
+              <div class="contact-icon">✉️</div>
+              <div>
+                <span class="contact-type">Email</span>
+                <span class="contact-val">candy@candypratama.dev</span>
+              </div>
+            </a>
+            <a href="https://wa.me/6281234567890" target="_blank" class="contact-item">
+              <div class="contact-icon">💬</div>
+              <div>
+                <span class="contact-type">WhatsApp</span>
+                <span class="contact-val">+62 812-3456-7890</span>
+              </div>
+            </a>
+            <a href="https://linkedin.com/in/candypratama" target="_blank" class="contact-item">
+              <div class="contact-icon">🔗</div>
+              <div>
+                <span class="contact-type">LinkedIn</span>
+                <span class="contact-val">linkedin.com/in/candypratama</span>
+              </div>
+            </a>
+            <a href="https://github.com/candypratama" target="_blank" class="contact-item">
+              <div class="contact-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              </div>
+              <div>
+                <span class="contact-type">GitHub</span>
+                <span class="contact-val">github.com/candypratama</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="contact-right">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" placeholder="Budi Santoso" autocomplete="off" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="budi@example.com" autocomplete="off" />
+            </div>
+            <div class="form-group">
+              <label for="project">What are you building?</label>
+              <select id="project">
+                <option value="">— Select project type —</option>
+                <option>Point of Sale (POS)</option>
+                <option>CMS / Blog Platform</option>
+                <option>Landing Page</option>
+                <option>E-commerce / Marketplace</option>
+                <option>Company Profile + Dashboard</option>
+                <option>REST API / Backend</option>
+                <option>Something else</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Tell me more</label>
+              <textarea id="message" rows="4" placeholder="Describe your project, timeline, and budget range..."></textarea>
+            </div>
+            <button type="submit" class="btn-primary full-width">
+              Send Message
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <a href="#home" class="nav-logo">
+          <span class="logo-bracket">&lt;</span>CP<span class="logo-bracket">/&gt;</span>
+        </a>
+        <span class="footer-copy">© 2025 Candy Pratama. Built with 🖤 and too much coffee.</span>
+        <a href="#home" class="back-top" aria-label="Back to top">↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
